@@ -1,0 +1,44 @@
+# Chronos Default Preferences Configuration (TOML)
+# Automatically generated on first launch at ~/.config/chronos/preferences.toml.
+
+[appearance]
+theme = "cyberpunk_neon"         # cyberpunk_neon | tokyonight_ops | catppuccin_mocha | dracula_synth | matrix_phosphor | blood_moon | nordic_aurora | gruvbox_obsidian | monochrome
+density = "comfortable"          # comfortable | compact
+motion = "full"                  # full | reduced | off
+show_gamification = true         # enables XP, levels, combo multipliers, daily quests, and trophy grid
+show_navigation_labels = true    # expand navigation rail labels when terminal width permits
+
+[focus]
+active_cadence = "harmonic"      # harmonic (25/5/15 x4) | deep_block (50/10/25 x3) | monolith (90/20/40 x2) | custom
+custom_focus_minutes = 40
+custom_short_break_minutes = 8
+custom_long_break_minutes = 20
+custom_intervals = 3
+default_category_id = "cat_software_eng"
+auto_start_breaks = false
+auto_start_focus = false
+zen_mode_default = false
+count_interrupted_in_totals = true
+
+[reading]
+default_duration_minutes = 35
+default_category_id = "cat_tech_reading"
+track_pages_read = true
+prompt_notes_on_complete = true
+
+[goals]
+daily_focus_minutes = 180        # 3 hours/day default (0 disables goal)
+weekly_focus_minutes = 900       # 15 hours/week default
+daily_reading_minutes = 60       # 1 hour/day default
+weekly_reading_minutes = 300     # 5 hours/week default
+
+[notifications]
+desktop_notifications = true
+sound_enabled = true
+sound_preset = "singing_bowl"    # singing_bowl | harmonic_chime | marimba_pulse | silent
+status_bar_export = true         # writes live ~/.cache/chronos/status.json for Waybar/status bars
+
+[safety]
+confirm_quit_active_session = true
+confirm_mode_or_route_abort = true
+auto_backup_before_reset = true

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Chronos
+GenericName=Deep Work & Reading Sanctuary
+Comment=Material-inspired terminal deep-work studio, reading sanctuary, analytics & sustainable progression system
+Exec=chronos
+Icon=chronos
+Terminal=true
+Categories=Utility;Office;ConsoleOnly;
+Keywords=pomodoro;focus;reading;timer;analytics;tui;

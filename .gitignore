@@ -1,0 +1,22 @@
+# Rust / Cargo build artifacts
+/target/
+**/*.rs.bk
+
+# Chronos local runtime/export artifacts (if run with relative paths)
+/.chronos/
+/backups/
+/exports/
+*.bak
+*.corrupt-*
+status.json
+*.wav
+
+# Editor & OS files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+EOF

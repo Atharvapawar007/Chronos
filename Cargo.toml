@@ -1,0 +1,36 @@
+[package]
+name = "chronos"
+version = "1.1.1"
+edition = "2021"
+rust-version = "1.87"
+authors = ["Chronos Architecture Team"]
+description = "A Material-inspired terminal deep-work studio, reading sanctuary, analytics observatory, and sustainable progression system"
+license = "MIT"
+readme = "README.md"
+keywords = ["productivity", "deep-work", "reading", "tui", "ratatui"]
+categories = ["command-line-utilities"]
+
+[[bin]]
+name = "chronos"
+path = "src/main.rs"
+
+[lib]
+name = "chronos"
+path = "src/lib.rs"
+
+[dependencies]
+ratatui = "0.26"
+crossterm = "0.27"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+toml = "0.8"
+clap = { version = "4.5", features = ["derive"] }
+chrono = { version = "0.4", features = ["serde"] }
+directories = "5.0"
+dirs = "5.0"
+
+[profile.release]
+opt-level = 3
+lto = "thin"
+codegen-units = 1
+strip = true
