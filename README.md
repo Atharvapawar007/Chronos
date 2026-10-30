@@ -755,5 +755,3 @@ auto_backup_before_reset = true
 ## License
 
 Released under the [MIT License](LICENSE).
-# Chronos
-# Chronos
